@@ -1,0 +1,29 @@
+.tours-cont {
+  height: 409px;
+  width: 100%;
+  //   background-color: pink;
+
+  .tour-bkgd {
+    height: 200px;
+    width: 100%;
+    // background-color: yellowgreen;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tours-header.jpg);
+    margin-top: 160px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .tours {
+      width: 226px;
+      height: 80px;
+      //   background-color: darkmagenta;
+      margin: 65px auto;
+      font-family: Proxima Nova, sans-serif;
+      font-size: 55px;
+      letter-spacing: 4px;
+      color: white;
+    }
+  }
+}

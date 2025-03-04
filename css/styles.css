@@ -1,0 +1,647 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+#app {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 500px;
+  position: relative;
+}
+
+.nav-container nav {
+  height: 90px;
+  max-width: 980px;
+  width: 100%;
+  border-bottom: solid 2px black;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  z-index: 99;
+  font-size: 19px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+}
+.nav-container nav .logo {
+  width: 150px;
+  height: 50px;
+  background-image: url(../images/logo-black.png);
+  background-repeat: no-repeat;
+}
+.nav-container nav .links {
+  max-width: 400px;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-container nav .links a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer .footer-logo {
+  width: 150px;
+  height: 50px;
+  background-image: url(../images/logo-white.png);
+  background-repeat: no-repeat;
+}
+.footer .p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+  font-weight: bolder;
+  color: white;
+}
+.footer .icons {
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .icons .icon {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+}
+
+.tours-cont {
+  height: 409px;
+  width: 100%;
+}
+.tours-cont .tour-bkgd {
+  height: 200px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tours-header.jpg);
+  margin-top: 160px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.tours-cont .tour-bkgd .tours {
+  width: 226px;
+  height: 80px;
+  margin: 65px auto;
+  font-family: Proxima Nova, sans-serif;
+  font-size: 55px;
+  letter-spacing: 4px;
+  color: white;
+}
+
+.countries-cont {
+  max-height: 1122px;
+  height: 100%;
+  max-width: 980px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.countries-cont .row-one {
+  height: 100%;
+  max-width: 980px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.countries-cont .row-one .row {
+  height: 100%;
+  max-width: 818px;
+  width: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.countries-cont .row-one .row .israel {
+  height: 304px;
+  width: 236px;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-01.jpg);
+}
+.countries-cont .row-one .row .israel .pic-cont {
+  width: 182px;
+  height: 210px;
+  margin-top: 37px;
+  margin-left: 26px;
+}
+.countries-cont .row-one .row .israel .pic-cont .pic-title {
+  width: 182px;
+  height: 80px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-one .row .israel .pic-cont .pic-price {
+  width: 152px;
+  height: 40px;
+  margin: 0 auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-one .row .israel .pic-cont .learn-more {
+  width: 133px;
+  height: 40px;
+  margin: 50px auto 0 auto;
+  border-radius: 50px;
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+}
+.countries-cont .row-one .row .usa {
+  height: 304px;
+  width: 236px;
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0 55px 0 55px;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-02.jpg);
+}
+.countries-cont .row-one .row .usa .pic-cont {
+  width: 182px;
+  height: 210px;
+  margin-top: 37px;
+  margin-left: 26px;
+}
+.countries-cont .row-one .row .usa .pic-cont .pic-title {
+  width: 182px;
+  height: 80px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-one .row .usa .pic-cont .pic-price {
+  width: 152px;
+  height: 40px;
+  margin: 0 auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-one .row .usa .pic-cont .learn-more {
+  width: 133px;
+  height: 40px;
+  margin: 50px auto 0 auto;
+  border-radius: 50px;
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+}
+.countries-cont .row-one .row .australia {
+  height: 304px;
+  width: 236px;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-03.jpg);
+}
+.countries-cont .row-one .row .australia .pic-cont {
+  width: 182px;
+  height: 210px;
+  margin-top: 37px;
+  margin-left: 26px;
+}
+.countries-cont .row-one .row .australia .pic-cont .pic-title {
+  width: 182px;
+  height: 80px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-one .row .australia .pic-cont .pic-price {
+  width: 152px;
+  height: 40px;
+  margin: 0 auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-one .row .australia .pic-cont .learn-more {
+  width: 133px;
+  height: 40px;
+  margin: 50px auto 0 auto;
+  border-radius: 50px;
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+}
+.countries-cont .row-two {
+  height: 100%;
+  max-width: 980px;
+  width: 100%;
+  display: flex;
+  margin: 55px 0 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.countries-cont .row-two .row {
+  height: 100%;
+  max-width: 818px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.countries-cont .row-two .row .new-zealand {
+  height: 304px;
+  width: 236px;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-01.jpg);
+}
+.countries-cont .row-two .row .new-zealand .pic-cont {
+  width: 182px;
+  height: 210px;
+  margin-top: 37px;
+  margin-left: 26px;
+}
+.countries-cont .row-two .row .new-zealand .pic-cont .pic-title {
+  width: 182px;
+  height: 80px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-two .row .new-zealand .pic-cont .pic-price {
+  width: 152px;
+  height: 40px;
+  margin: 0 auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-two .row .new-zealand .pic-cont .learn-more {
+  width: 133px;
+  height: 40px;
+  margin: 50px auto 0 auto;
+  border-radius: 50px;
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+}
+.countries-cont .row-two .france {
+  height: 304px;
+  width: 236px;
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0 55px 0 55px;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-05.jpg);
+}
+.countries-cont .row-two .france .pic-cont {
+  width: 182px;
+  height: 210px;
+  margin-top: 37px;
+  margin-left: 26px;
+}
+.countries-cont .row-two .france .pic-cont .pic-title {
+  width: 182px;
+  height: 80px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-two .france .pic-cont .pic-price {
+  width: 152px;
+  height: 40px;
+  margin: 0 auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-two .france .pic-cont .learn-more {
+  width: 133px;
+  height: 40px;
+  margin: 50px auto 0 auto;
+  border-radius: 50px;
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+}
+.countries-cont .row-two .egypt {
+  height: 304px;
+  width: 236px;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-06.jpg);
+}
+.countries-cont .row-two .egypt .pic-cont {
+  width: 182px;
+  height: 210px;
+  margin-top: 37px;
+  margin-left: 26px;
+}
+.countries-cont .row-two .egypt .pic-cont .pic-title {
+  width: 182px;
+  height: 80px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-two .egypt .pic-cont .pic-price {
+  width: 152px;
+  height: 40px;
+  margin: 0 auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-two .egypt .pic-cont .learn-more {
+  width: 133px;
+  height: 40px;
+  margin: 50px auto 0 auto;
+  border-radius: 50px;
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+}
+.countries-cont .row-three {
+  height: 100%;
+  max-width: 980px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.countries-cont .row-three .row {
+  height: 100%;
+  max-width: 818px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.countries-cont .row-three .row .japan {
+  height: 304px;
+  width: 236px;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-07.jpg);
+}
+.countries-cont .row-three .row .japan .pic-cont {
+  width: 182px;
+  height: 210px;
+  margin-top: 37px;
+  margin-left: 26px;
+}
+.countries-cont .row-three .row .japan .pic-cont .pic-title {
+  width: 182px;
+  height: 80px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-three .row .japan .pic-cont .pic-price {
+  width: 152px;
+  height: 40px;
+  margin: 0 auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-three .row .japan .pic-cont .learn-more {
+  width: 133px;
+  height: 40px;
+  margin: 50px auto 0 auto;
+  border-radius: 50px;
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+}
+.countries-cont .row-three .row .canada {
+  height: 304px;
+  width: 236px;
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0 55px 0 55px;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-08.jpg);
+}
+.countries-cont .row-three .row .canada .pic-cont {
+  width: 182px;
+  height: 210px;
+  margin-top: 37px;
+  margin-left: 26px;
+}
+.countries-cont .row-three .row .canada .pic-cont .pic-title {
+  width: 182px;
+  height: 80px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: -15px;
+  color: white;
+}
+.countries-cont .row-three .row .canada .pic-cont .pic-price {
+  width: 152px;
+  height: 40px;
+  margin: 0 auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-three .row .canada .pic-cont .learn-more {
+  width: 133px;
+  height: 40px;
+  margin: 50px auto 0 auto;
+  border-radius: 50px;
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+}
+.countries-cont .row-three .row .uae {
+  height: 304px;
+  width: 236px;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-09.jpg);
+}
+.countries-cont .row-three .row .uae .pic-cont {
+  width: 182px;
+  height: 210px;
+  margin-top: 37px;
+  margin-left: 26px;
+}
+.countries-cont .row-three .row .uae .pic-cont .pic-title {
+  width: 182px;
+  height: 80px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-three .row .uae .pic-cont .pic-price {
+  width: 152px;
+  height: 40px;
+  margin: 0 auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.countries-cont .row-three .row .uae .pic-cont .learn-more {
+  width: 133px;
+  height: 40px;
+  margin: 50px auto 0 auto;
+  border-radius: 50px;
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+}
